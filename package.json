@@ -1,8 +1,9 @@
 {
     "name": "@rws-framework/console-vis",
-    "version": "0.0.2",
+    "version": "0.1.0",
     "private": false,
     "description": "",
+    "type": "module",
     "scripts": {},
     "author": "papablack",
     "license": "ISC",
