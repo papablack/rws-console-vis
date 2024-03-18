@@ -13,6 +13,6 @@
     "paths": {}, // Specify paths mappings for modules
     "sourceMap": true // Generates corresponding '.map' file.
   },
-  "include": ["src/**/*"], // Include all files in the src directory
+  "include": ["src/"], // Include all files in the src directory
   "exclude": ["node_modules", "**/*.spec.ts"] // Exclude the node_modules directory and test files
 }
