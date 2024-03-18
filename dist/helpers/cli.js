@@ -8,4 +8,3 @@ export default async function select(choices, defaultVal, parser = null) {
             } }));
     });
 }
-//# sourceMappingURL=cli.js.map
