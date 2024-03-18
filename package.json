@@ -1,0 +1,22 @@
+{
+    "name": "@rws-framework/console-vis",
+    "version": "0.0.1",
+    "private": false,
+    "description": "",
+    "scripts": {       
+    },
+    "author": "papablack",
+    "license": "ISC",
+    "dependencies": {                
+        "@rws-framework/console": "*"            
+    },
+    "devDependencies": {        
+        "typescript": "^5.3.3",
+        "mocha": "^10.2.0",
+        "ts-node": "^10.9.1"        
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/papablack/rws-console-vis.git"
+    }
+}
