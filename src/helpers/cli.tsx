@@ -1,4 +1,4 @@
-const ink = require('ink');
+import ink from 'ink';
 const inkUi = require('@inkjs/ui');
 type Option = typeof inkUi.Option;
 const Select = inkUi.Select;
