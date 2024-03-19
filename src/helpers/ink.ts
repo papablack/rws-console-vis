@@ -1,2 +1,1 @@
-import {ink, inkUi} from '../../dist/ink.bundle';
-export { ink, inkUi }
+export * from '../../dist/ink.bundle';
