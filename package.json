@@ -1,6 +1,6 @@
 {
     "name": "@rws-framework/console-vis",
-    "version": "0.2.2",
+    "version": "0.2.1",
     "private": false,
     "description": "",
     "scripts": {
@@ -11,7 +11,7 @@
     "author": "papablack",
     "license": "ISC",
     "dependencies": {
-        "@rws-framework/console": "^0.1.8",
+        "@rws-framework/console": "^0.1.9",
         "enquirer": "^2.4.1"
     },
     "devDependencies": {
