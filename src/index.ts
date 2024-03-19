@@ -1,8 +1,6 @@
 import * as rwsInkComponents from './components/index';
 import * as rwsInkHelpers from './helpers/index';
-
-const ink = require('ink');
-const inkUi = require('@inkjs/ui');
+import {ink, inkUi} from './helpers/ink';
 
 export {
     rwsInkHelpers,

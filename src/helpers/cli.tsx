@@ -1,6 +1,6 @@
-import ink from 'ink';
-const inkUi = require('@inkjs/ui');
-type Option = typeof inkUi.Option;
+import {ink, inkUi} from './ink';
+
+type Option = inkUi.Option;
 const Select = inkUi.Select;
 
 export type InkChoicesType = Option[];

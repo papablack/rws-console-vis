@@ -1,4 +1,5 @@
-type Option = any;
+import { inkUi } from './ink';
+type Option = inkUi.Option;
 export type InkChoicesType = Option[];
 export type InkChoiceValueType = Option;
 export type InkParserType = <T>(elem: any) => T;

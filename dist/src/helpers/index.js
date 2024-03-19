@@ -23,15 +23,6 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const jsx_runtime_1 = require("react/jsx-runtime");
-async function select(choices, defaultVal, parser = null) {
-    const ink = await Promise.resolve().then(() => __importStar(require('ink/index')));
-    const inkUi = await Promise.resolve().then(() => __importStar(require('@inkjs/ui/index')));
-    const Select = inkUi.Select;
-    return new Promise((resolve) => {
-        ink.render((0, jsx_runtime_1.jsx)(Select, { defaultValue: defaultVal, options: choices, onChange: (newVal) => {
-                resolve(newVal);
-            } }));
-    });
-}
-exports.default = select;
+exports.cli = void 0;
+const cli = __importStar(require("./cli"));
+exports.cli = cli;

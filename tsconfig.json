@@ -11,7 +11,8 @@
     "outDir": "dist", // Output directory for the compiled files
     "baseUrl": ".", // Base directory to resolve non-relative module names
     "paths": {}, // Specify paths mappings for modules    
-    "declaration": true
+    "declaration": true,
+    "skipLibCheck": true
   },
   "include": ["src/"], // Include all files in the src directory
   "exclude": ["node_modules", "**/*.spec.ts"] // Exclude the node_modules directory and test files
