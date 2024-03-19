@@ -1,5 +1,6 @@
-import { render } from 'ink';
-import {Select, Option} from '@inkjs/ui';
+import { render, inkUi } from './ink';
+type Option = typeof inkUi.Option;
+const Select = inkUi.Select;
 
 export type InkChoicesType = Option[];
 
@@ -15,7 +16,7 @@ export default async function select(
         render(<Select 
             defaultValue={defaultVal}
             options={choices}
-            onChange={(newVal) => {
+            onChange={(newVal: string) => {
                 resolve(newVal);
             }}
         />);
