@@ -1,7 +1,9 @@
-import { inkUi } from './ink';
-type Option = inkUi.Option;
-export type InkChoicesType = Option[];
-export type InkChoiceValueType = Option;
-export type InkParserType = <T>(elem: any) => T;
-export default function select(choices: InkChoicesType, defaultVal?: string, parser?: InkParserType | null): Promise<string>;
+type CliChoice<T> = {
+    name: string;
+    value: T;
+    message: string;
+};
+type CliChoices<T> = CliChoice<T>[];
+type CliValParserType<T> = (...params: any[]) => T;
+export declare function select<T extends string | null | number | boolean = string>(keyName: string, question: string, choiceVals: CliChoices<T>, defaultVal?: string, parser?: CliValParserType<T>): Promise<T | null>;
 export {};

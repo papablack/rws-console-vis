@@ -1,13 +1,15 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const jsx_runtime_1 = require("react/jsx-runtime");
-const ink_1 = require("./ink");
-const Select = ink_1.inkUi.Select;
-async function select(choices, defaultVal, parser = null) {
-    return new Promise((resolve) => {
-        ink_1.ink.render((0, jsx_runtime_1.jsx)(Select, { defaultValue: defaultVal, options: choices, onChange: (newVal) => {
-                resolve(newVal);
-            } }));
-    });
+exports.select = void 0;
+const enquirer_1 = require("enquirer");
+async function select(keyName, question, choiceVals, defaultVal, parser = (x) => x) {
+    const res = await (0, enquirer_1.prompt)([{
+            type: 'select',
+            name: 'selectValue',
+            message: question,
+            choices: choiceVals
+        }]);
+    const picked = choiceVals.find(it => it.name === res.selectValue);
+    return picked ? parser(picked.value) : null;
 }
-exports.default = select;
+exports.select = select;

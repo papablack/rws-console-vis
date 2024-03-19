@@ -23,11 +23,9 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.inkUi = exports.ink = exports.rwsInkComponents = exports.rwsInkHelpers = void 0;
-const rwsInkComponents = __importStar(require("./components/index"));
-exports.rwsInkComponents = rwsInkComponents;
-const rwsInkHelpers = __importStar(require("./helpers/index"));
-exports.rwsInkHelpers = rwsInkHelpers;
-const ink_1 = require("./helpers/ink");
-Object.defineProperty(exports, "ink", { enumerable: true, get: function () { return ink_1.ink; } });
-Object.defineProperty(exports, "inkUi", { enumerable: true, get: function () { return ink_1.inkUi; } });
+exports.Enquirer = exports.prompt = exports.rwsCliVisHelpers = void 0;
+const rwsCliVisHelpers = __importStar(require("./helpers/index"));
+exports.rwsCliVisHelpers = rwsCliVisHelpers;
+const enquirer_1 = __importStar(require("enquirer"));
+exports.Enquirer = enquirer_1.default;
+Object.defineProperty(exports, "prompt", { enumerable: true, get: function () { return enquirer_1.prompt; } });

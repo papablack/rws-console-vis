@@ -1,10 +1,9 @@
-import * as rwsInkComponents from './components/index';
-import * as rwsInkHelpers from './helpers/index';
-import {ink, inkUi} from './helpers/ink';
+import * as rwsCliVisHelpers from './helpers/index';
+
+import Enquirer, { prompt } from 'enquirer';
 
 export {
-    rwsInkHelpers,
-    rwsInkComponents,
-    ink,
-    inkUi 
+    rwsCliVisHelpers,
+    prompt,
+    Enquirer
 };
