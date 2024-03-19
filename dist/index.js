@@ -23,11 +23,12 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.render = exports.ink = exports.rwsInkComponents = exports.rwsInkHelpers = void 0;
+exports.inkUi = exports.ink = exports.rwsInkComponents = exports.rwsInkHelpers = void 0;
 const rwsInkComponents = __importStar(require("./components/index"));
 exports.rwsInkComponents = rwsInkComponents;
 const rwsInkHelpers = __importStar(require("./helpers/index"));
 exports.rwsInkHelpers = rwsInkHelpers;
-const ink_1 = __importStar(require("./helpers/ink"));
-exports.ink = ink_1.default;
-Object.defineProperty(exports, "render", { enumerable: true, get: function () { return ink_1.render; } });
+const ink = require('ink');
+exports.ink = ink;
+const inkUi = require('@inkjs/ui');
+exports.inkUi = inkUi;

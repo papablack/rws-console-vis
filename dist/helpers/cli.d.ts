@@ -1,4 +1,4 @@
-import { inkUi } from './ink';
+declare const inkUi: any;
 type Option = typeof inkUi.Option;
 export type InkChoicesType = Option[];
 export type InkChoiceValueType = Option;

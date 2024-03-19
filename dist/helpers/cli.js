@@ -1,11 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const jsx_runtime_1 = require("react/jsx-runtime");
-const ink_1 = require("./ink");
-const Select = ink_1.inkUi.Select;
+const ink = require('ink');
+const inkUi = require('@inkjs/ui');
+const Select = inkUi.Select;
 async function select(choices, defaultVal, parser = null) {
     return new Promise((resolve) => {
-        (0, ink_1.render)((0, jsx_runtime_1.jsx)(Select, { defaultValue: defaultVal, options: choices, onChange: (newVal) => {
+        ink.render((0, jsx_runtime_1.jsx)(Select, { defaultValue: defaultVal, options: choices, onChange: (newVal) => {
                 resolve(newVal);
             } }));
     });

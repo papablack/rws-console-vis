@@ -1,4 +1,5 @@
 import * as rwsInkComponents from './components/index';
 import * as rwsInkHelpers from './helpers/index';
-import ink, { render } from './helpers/ink';
-export { rwsInkHelpers, rwsInkComponents, ink, render };
+declare const ink: any;
+declare const inkUi: any;
+export { rwsInkHelpers, rwsInkComponents, ink, inkUi };

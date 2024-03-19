@@ -1,4 +1,5 @@
-import { render, inkUi } from './ink';
+const ink = require('ink');
+const inkUi = require('@inkjs/ui');
 type Option = typeof inkUi.Option;
 const Select = inkUi.Select;
 
@@ -13,7 +14,7 @@ export default async function select(
     parser: InkParserType | null = null): Promise<string>
 {
     return new Promise((resolve: (value: string) => void) => {
-        render(<Select 
+        ink.render(<Select 
             defaultValue={defaultVal}
             options={choices}
             onChange={(newVal: string) => {
