@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.inkUi = exports.inkPackage = exports.render = exports.Instance = exports.RenderOptions = void 0;
+const inkPackage = require('ink');
+exports.inkPackage = inkPackage;
+const inkUi = require('@inkjs/ui');
+exports.inkUi = inkUi;
+const { RenderOptions, Instance } = inkPackage;
+exports.RenderOptions = RenderOptions;
+exports.Instance = Instance;
+const render = inkPackage.render;
+exports.render = render;
+exports.default = inkPackage;
