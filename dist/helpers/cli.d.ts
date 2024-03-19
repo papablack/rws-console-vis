@@ -1,9 +1,9 @@
-type CliChoice<T> = {
+type CliChoice = {
     name: string;
-    value: T;
+    value: string;
     message: string;
 };
-type CliChoices<T> = CliChoice<T>[];
+type CliChoices = CliChoice[];
 type CliValParserType<T> = (...params: any[]) => T;
-export declare function select<T extends string | null | number | boolean = string>(keyName: string, question: string, choiceVals: CliChoices<T>, defaultVal?: string, parser?: CliValParserType<T>): Promise<T | null>;
+export declare function select<T extends string | null | number | boolean = string>(keyName: string, question: string, choiceVals: CliChoices, defaultVal?: string, parser?: CliValParserType<T>): Promise<T | null>;
 export {};
